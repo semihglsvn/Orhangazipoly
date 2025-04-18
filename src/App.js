@@ -52,7 +52,7 @@ const positionCoordinates = [
   { top: '81%', left: '90%' }
 ];
 
-// Board data remains unchanged
+// Board data 
 const boardData = [
   { id: 0, name: "GO", type: "corner", position: 0 },
   { id: 1, name: "Random Yemek", type: "property", position: 1, price: 60, rents: [2,10,30,90,160,250], houseCost: 50, mortgageValue: 30, color: "brown", houses: 0, owner: null },
@@ -96,7 +96,7 @@ const boardData = [
   { id: 39, name: "Class Döner", type: "property", position: 39, price: 400, rents: [50,200,600,1400,1700,2000], houseCost: 200, mortgageValue: 200, color: "blue", houses: 0, owner: null }
 ];
 
-// New Chance cards array
+//Chance cards array
 const chanceCards = [
   { id: 1, text: "Advance to Class.", action: "move", destination: 39 },
   { id: 2, text: "Advance to Go (Collect $200).", action: "move", destination: 0 },
@@ -114,7 +114,7 @@ const chanceCards = [
   { id: 16, text: "Your building loan matures. Collect $150.", action: "collect", amount: 150 }
 ];
 
-// New Community Chest cards array
+//Community Chest cards array
 const communityChestCards = [
   { id: 1, text: "Advance to Go (Collect $200).", action: "move", destination: 0 },
   { id: 2, text: "Bank error in your favor. Collect $200.", action: "collect", amount: 200 },
@@ -132,10 +132,9 @@ const communityChestCards = [
   { id: 14, text: "You are assessed for street repair. Pay $40 per house. $115 per hotel you own.", action: "repairsDetailed", houseCost: 40, hotelCost: 115 },
   { id: 15, text: "You have won second prize in a beauty contest. Collect $10.", action: "collect", amount: 10 },
   { id: 16, text: "You inherit $100.", action: "collect", amount: 100 },
-  { id: 17, text: "You have banged Atakan's mother take 300.", action: "collect", amount: 300 }
 ];
 
-// Helper: Render house/hotel icons
+
 const renderHouseIcons = (houses) => {
   if (houses === 0) return null;
   if (houses < 5) {
